@@ -91,37 +91,9 @@ mobileno:547436346
 clasSId:63d6d2bac61d197bd11775bc
 
 
-http://localhost:8081/student/First/A
+ans :added
 
-[
-  {
-    "_id": "63d779433a1f9969ab06739a",
-    "pkey": "1Anu1547436346",
-    "name": "Anu",
-    "rollno": 1,
-    "mobileno": 547436346,
-    "classId": "63d6d2bac61d197bd11775bc",
-    "__v": 0
-  },
-  {
-    "_id": "63d779dc3a1f9969ab0673a0",
-    "pkey": "2Syana254743677",
-    "name": "Syana",
-    "rollno": 2,
-    "mobileno": 54743677,
-    "classId": "63d6d2bac61d197bd11775bc",
-    "__v": 0
-  },
-  {
-    "_id": "63d779e83a1f9969ab0673a6",
-    "pkey": "3gayathri34566",
-    "name": "gayathri",
-    "rollno": 3,
-    "mobileno": 4566,
-    "classId": "63d6d2bac61d197bd11775bc",
-    "__v": 0
-  }
-]
+
 
 
 get student details of standard and division
