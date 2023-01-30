@@ -12,15 +12,13 @@ delete student =>Objectid will give of corresponding student    :   http://local
 
 delete class =>Objectid will give of corresponding class   :    http://localhost:8081/class/63d776503a1f9969ab067348
 
+
+
 explanations
-
-
-
-
 
 create class 
 
-Post
+Post method
 
 http://localhost:8081/class
 
