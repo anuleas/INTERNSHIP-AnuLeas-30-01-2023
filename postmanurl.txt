@@ -1,0 +1,264 @@
+create class: http://localhost:8081/class
+
+create student:http://localhost:8081/student
+
+read student with standard and division:http://localhost:8081/student/First/A
+
+read student with standard:http://localhost:8081/student/First
+
+update student with standard and division=>Objectid will give of corresponding student. otherwise not working    :  http://localhost:8081/student/63d77ac33a1f9969ab0673dc/First/A
+
+delete student =>Objectid will give of corresponding student    :   http://localhost:8081/student/63d77ac33a1f9969ab0673dc
+
+delete class =>Objectid will give of corresponding class   :    http://localhost:8081/class/63d776503a1f9969ab067348
+
+explanations
+
+
+
+
+
+create class 
+
+Post
+
+http://localhost:8081/class
+
+eg:
+standard:First
+division:A
+
+Get class data from the db
+Get method
+
+http://localhost:8081/class
+
+
+this data from the database
+
+[
+  {
+    "_id": "63d6d2bac61d197bd11775bc",
+    "pkey": "1FirstA",
+    "standard": "First",
+    "division": "A",
+    "__v": 0
+  },
+  {
+    "_id": "63d6d2c1c61d197bd11775bf",
+    "pkey": "2FirstB",
+    "standard": "First",
+    "division": "B",
+    "__v": 0
+  },
+  {
+    "_id": "63d6d2c7c61d197bd11775c2",
+    "pkey": "3FirstC",
+    "standard": "First",
+    "division": "C",
+    "__v": 0
+  },
+  {
+    "_id": "63d6d2d4c61d197bd11775c5",
+    "pkey": "4SecondA",
+    "standard": "Second",
+    "division": "A",
+    "__v": 0
+  },
+  {
+    "_id": "63d6d2ddc61d197bd11775cb",
+    "pkey": "6SecondC",
+    "standard": "Second",
+    "division": "C",
+    "__v": 0
+  },
+  {
+    "_id": "63d6d337c61d197bd11775d1",
+    "pkey": "6SecondB",
+    "standard": "Second",
+    "division": "B",
+    "__v": 0
+  }
+]
+
+add student detaila
+http://localhost:8081/student
+
+post method
+
+eg:
+name:Anu
+rollno:1
+mobileno:547436346
+clasSId:63d6d2bac61d197bd11775bc
+
+
+http://localhost:8081/student/First/A
+
+[
+  {
+    "_id": "63d779433a1f9969ab06739a",
+    "pkey": "1Anu1547436346",
+    "name": "Anu",
+    "rollno": 1,
+    "mobileno": 547436346,
+    "classId": "63d6d2bac61d197bd11775bc",
+    "__v": 0
+  },
+  {
+    "_id": "63d779dc3a1f9969ab0673a0",
+    "pkey": "2Syana254743677",
+    "name": "Syana",
+    "rollno": 2,
+    "mobileno": 54743677,
+    "classId": "63d6d2bac61d197bd11775bc",
+    "__v": 0
+  },
+  {
+    "_id": "63d779e83a1f9969ab0673a6",
+    "pkey": "3gayathri34566",
+    "name": "gayathri",
+    "rollno": 3,
+    "mobileno": 4566,
+    "classId": "63d6d2bac61d197bd11775bc",
+    "__v": 0
+  }
+]
+
+
+get student details of standard and division
+
+http://localhost:8081/student/Second/C
+
+
+
+[
+  {
+    "_id": "63d77ab43a1f9969ab0673d6",
+    "pkey": "11kurian1346457547657",
+    "name": "kurian",
+    "rollno": 1,
+    "mobileno": 346457547657,
+    "classId": "63d6d2ddc61d197bd11775cb",
+    "__v": 0
+  },
+  {
+    "_id": "63d77ac33a1f9969ab0673dc",
+    "pkey": "12leos2346457547657",
+    "name": "leos",
+    "rollno": 2,
+    "mobileno": 346457547657,
+    "classId": "63d6d2ddc61d197bd11775cb",
+    "__v": 0
+  }
+]
+
+
+
+
+
+get student details of standard
+
+http://localhost:8081/student/First
+
+[
+  {
+    "_id": "63d779433a1f9969ab06739a",
+    "pkey": "1Anu1547436346",
+    "name": "Anu",
+    "rollno": 1,
+    "mobileno": 547436346,
+    "classId": "63d6d2bac61d197bd11775bc",
+    "__v": 0
+  },
+  {
+    "_id": "63d779dc3a1f9969ab0673a0",
+    "pkey": "2Syana254743677",
+    "name": "Syana",
+    "rollno": 2,
+    "mobileno": 54743677,
+    "classId": "63d6d2bac61d197bd11775bc",
+    "__v": 0
+  },
+  {
+    "_id": "63d779e83a1f9969ab0673a6",
+    "pkey": "3gayathri34566",
+    "name": "gayathri",
+    "rollno": 3,
+    "mobileno": 4566,
+    "classId": "63d6d2bac61d197bd11775bc",
+    "__v": 0
+  },
+  {
+    "_id": "63d77a133a1f9969ab0673ac",
+    "pkey": "4suasana13543456",
+    "name": "suasana",
+    "rollno": 1,
+    "mobileno": 3543456,
+    "classId": "63d6d2c1c61d197bd11775bf",
+    "__v": 0
+  },
+  {
+    "_id": "63d77a233a1f9969ab0673b2",
+    "pkey": "5Rani23543456",
+    "name": "Rani",
+    "rollno": 2,
+    "mobileno": 3543456,
+    "classId": "63d6d2c1c61d197bd11775bf",
+    "__v": 0
+  },
+  {
+    "_id": "63d77a303a1f9969ab0673b8",
+    "pkey": "6Manju3456",
+    "name": "Manju",
+    "rollno": 3,
+    "mobileno": 456,
+    "classId": "63d6d2c1c61d197bd11775bf",
+    "__v": 0
+  },
+  {
+    "_id": "63d77a553a1f9969ab0673be",
+    "pkey": "7Sara115673",
+    "name": "Sara",
+    "rollno": 1,
+    "mobileno": 15673,
+    "classId": "63d6d2c7c61d197bd11775c2",
+    "__v": 0
+  },
+  {
+    "_id": "63d77a603a1f9969ab0673c4",
+    "pkey": "8Leas24355",
+    "name": "Leas",
+    "rollno": 2,
+    "mobileno": 4355,
+    "classId": "63d6d2c7c61d197bd11775c2",
+    "__v": 0
+  }
+]
+
+
+
+
+
+
+//update student details.
+
+http://localhost:8081/student/63d77ac33a1f9969ab0673dc/First/A
+
+ans:updated
+
+
+delete student
+
+http://localhost:8081/student/63d77ac33a1f9969ab0673dc
+
+
+
+delete class
+
+
+http://localhost:8081/class/63d776503a1f9969ab067348
+
+
+
+
